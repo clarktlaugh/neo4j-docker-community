@@ -1,5 +1,5 @@
 FROM dockerfile/java
-MAINTAINER Nick Manning, nick@swig.co
+MAINTAINER Clark Laughlin, clark.laughlin@linaro.org
 
 RUN wget -O - http://debian.neo4j.org/neotechnology.gpg.key | apt-key add - && \
     echo 'deb http://debian.neo4j.org/repo stable/' > /etc/apt/sources.list.d/neo4j.list && \
