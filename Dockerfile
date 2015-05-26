@@ -8,7 +8,8 @@ RUN wget -O - http://debian.neo4j.org/neotechnology.gpg.key | apt-key add - && \
 ADD launch.sh /
 RUN chmod +x /launch.sh && \
     apt-get clean && \
-    echo "remote_shell_host=0.0.0.0" >> /var/lib/neo4j/conf/neo4j.properties
+    echo "remote_shell_host=0.0.0.0" >> /var/lib/neo4j/conf/neo4j.properties && \
+    echo "dbms.security.auth_enabled=false" >> /var/lib/neo4j/conf/neo4j.properties
 
 VOLUME /var/lib/neo4j/data
 
