@@ -1,4 +1,4 @@
-FROM dockerfile/java
+FROM java:7
 MAINTAINER Clark Laughlin, clark.laughlin@linaro.org
 
 RUN wget -O - http://debian.neo4j.org/neotechnology.gpg.key | apt-key add - && \
