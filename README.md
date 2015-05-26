@@ -4,8 +4,6 @@ A nice, clean image of Neo4j Community with appropriate documentation. This imag
 
 # Try It Out
 
-You can read my tutorial blog post or skip to the concise summary below.
-
 ## Run (as a test)
 
 - On the server that docker is installed: 
